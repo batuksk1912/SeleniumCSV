@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class Main {
 
-    private static final String SAMPLE_CSV_FILE = "/Users/Mac/Desktop/sample4.csv";
+    private static final String SAMPLE_CSV_FILE = "/Users/Mac/Desktop/sample5.csv";
 
     @Test
     public void generate() throws IOException {
@@ -40,8 +40,5 @@ public class Main {
             }
             csvPrinter.flush();
         }
-
-        //File csvFile = new File("/Users/Mac/Desktop/test2.csv");
-        //System.out.println(myList.toString());
     }
 }

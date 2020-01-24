@@ -1,29 +1,20 @@
-import com.github.javafaker.CreditCardType;
 import com.github.javafaker.Faker;
-import com.opencsv.CSVWriter;
-
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.stream.Collectors;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
+import org.testng.annotations.Test;
 
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Arrays;
+import java.util.ArrayList;
 
 public class Main {
 
-    private static final String SAMPLE_CSV_FILE = "/Users/Mac/Desktop/sample3.csv";
+    private static final String SAMPLE_CSV_FILE = "/Users/Mac/Desktop/sample4.csv";
 
-    public static void main(String[] args) throws IOException {
+    @Test
+    public void generate() throws IOException {
         Faker faker = new Faker();
         Support s = new Support();
         ArrayList<SingleRecord> myList = new ArrayList<SingleRecord>();
